@@ -31,7 +31,7 @@
     <div class="or-seperator"><i>or</i></div>
     <form method="post">
       {% csrf_token %}
-      {{form|crispy}}
+      {% comment %} {{form|crispy}} {% endcomment %}
       <button class="btn btn-success btn-block" type="submit">Sign Up</button>
     </form>
     <br>
